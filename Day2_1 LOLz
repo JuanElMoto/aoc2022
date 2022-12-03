@@ -1,0 +1,1 @@
+for x in 4 8 3 1 5 9 7 2 6 ; do echo $x >> tmp$$ ; done ; sort input | uniq -c | awk '{ print $1 "* +"}' | paste tmp$$ - | echo 0 `cat` p | dc ; rm tmp$$
